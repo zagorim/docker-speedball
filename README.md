@@ -1,7 +1,7 @@
 # speedball
 =================
 
-docker image to run a speedball server in 2min
+[docker](https://www.docker.com/) image to run a speedball server in 2min
 
 You just need to specify your maniaplanet dedicated server login, password and the server name before running it like this :
 
