@@ -1,7 +1,8 @@
 # speedball
 =================
 
-[docker](https://www.docker.com/) image to run a speedball server in 2min
+[docker](https://www.docker.com/) image to run a speedball server in 2min (if you don't count the download time :D) 
+
 if you don't know [what docker is](https://www.docker.com/whatisdocker/) and how to [install it](https://docs.docker.com/installation/debian/)
 
 You just need to specify your maniaplanet dedicated server login, password and the server name before running it like this :
