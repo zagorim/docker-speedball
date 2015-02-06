@@ -1,5 +1,4 @@
 # speedball
-=================
 
 run a speedball server super easily with [docker](https://www.docker.com/)
 
