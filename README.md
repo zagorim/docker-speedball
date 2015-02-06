@@ -1,6 +1,6 @@
-# speedball
+# docker-Speedball
 
-Run a speedball server super easily with [docker](https://www.docker.com/)
+Run a shootmania speedball server super easily with [docker](https://www.docker.com/)
 
 [What is docker](https://www.docker.com/whatisdocker/) 
 
