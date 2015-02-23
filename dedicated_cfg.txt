@@ -16,14 +16,14 @@
 	
 	<server_options>
 		<name>SERVER_NAME</name>
-		<comment></comment>
+		<comment>COMMENT</comment>
 		<hide_server>0</hide_server>					<!-- value is 0 (always shown), 1 (always hidden), 2 (hidden from nations) -->
 
-		<max_players>32</max_players>
-		<password></password>
+		<max_players>6</max_players>
+		<password>PLAY_PASSWORD</password>
 		
-		<max_spectators>32</max_spectators>
-		<password_spectator></password_spectator>
+		<max_spectators>12</max_spectators>
+		<password_spectator>SPEC_PASSWORD</password_spectator>
 	
 		<keep_player_slots>False</keep_player_slots>			<!-- when a player changes to spectator, hould the server keep if player slots/scores etc.. or not. --> 	
 		<ladder_mode>forced</ladder_mode>				<!-- value between 'inactive', 'forced' (or '0', '1') -->
