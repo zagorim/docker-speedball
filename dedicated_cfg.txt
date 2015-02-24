@@ -4,7 +4,7 @@
 	<authorization_levels>
 		<level>
 			<name>SuperAdmin</name>
-			<password>iamtoostrong</password>
+			<password>RPC_PASS</password>
 		</level>
 	</authorization_levels>
 	

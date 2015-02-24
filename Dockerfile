@@ -11,10 +11,12 @@ RUN apt-get update && \
         DEBIAN_FRONTEND=noninteractive apt-get install -yq maniaplanet-server \
         python-software-properties \
         mariadb-server \
+	supervisor \
         curl \
         git \
 	php5-cli \
 	php5-curl \
+	php5-mysqlnd \
         procps \
 	pwgen
 RUN     rm -rf /var/lib/apt/lists/* && \
@@ -28,8 +30,11 @@ RUN useradd -d /opt/maniaplanet-server/ -s /bin/bash shootmania
 RUN curl -L -o /opt/maniaplanet-server/UserData/Packs/SpeedBall.Title.Pack.Gbx http://files.steeffeen.com/packs/SpeedBall.Title.Pack.Gbx
 RUN cd /opt && git clone https://github.com/ManiaControl/ManiaControl.git && chown -R shootmania:games /opt/ManiaControl && chmod -R +x /opt/ManiaControl
 COPY dedicated_cfg.txt /opt/maniaplanet-server/UserData/Config/
-COPY RunSpeedBall.sh /opt/maniaplanet-server/
+COPY supervisord.conf /etc/supervisor/supervisord.conf
+COPY firstrun.sh /opt/
+COPY speedball.sh /opt/
+COPY maniacontrol.sh /opt/
 RUN usermod -a -G games shootmania
 WORKDIR /opt/maniaplanet-server
-CMD ["/opt/maniaplanet-server/RunSpeedBall.sh"]
+CMD ["/usr/bin/supervisord"]
 
