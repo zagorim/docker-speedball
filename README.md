@@ -10,8 +10,8 @@ You just need to specify your maniaplanet dedicated server login, password and t
 
 ```
 docker run --name myspeedball -d -p 2350:2350/udp -p 2350:2350/tcp -p 3450:3450/udp
--p 3450:3450/tcp -e 'SERVER_NAME=SERVER NAME' -e 'MASTER_LOGIN=YOURLOGIN' 
--e 'MASTER_PASSWORD=YOURPASS' zagorim/speedball
+-p 3450:3450/tcp -e 'SERVER_NAME=server_name' -e 'MASTER_LOGIN=dedicated_login' 
+-e 'MASTER_PASSWORD=dedicated_password' -e 'ADMIN_LOGIN=shootmania_login' zagorim/speedball
 ```
 
 if you need to modify something inside the container you can enter it with 
