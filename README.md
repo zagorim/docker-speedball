@@ -27,7 +27,6 @@ then type "export TERM=xterm inside the container"
 All the environment variables you can/need to modify
 
 ```
-
 MASTER_LOGIN        Required
 MASTER_PASSWORD     Required
 SERVER_NAME         Required
