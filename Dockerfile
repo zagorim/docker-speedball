@@ -29,6 +29,7 @@ RUN     rm -rf /var/lib/apt/lists/* && \
 RUN useradd -d /opt/maniaplanet-server/ -s /bin/bash shootmania
 RUN curl -L -o /opt/maniaplanet-server/UserData/Packs/SpeedBall.Title.Pack.Gbx http://files.steeffeen.com/packs/SpeedBall.Title.Pack.Gbx
 RUN cd /opt && git clone https://github.com/ManiaControl/ManiaControl.git && chown -R shootmania:games /opt/ManiaControl && chmod -R +x /opt/ManiaControl
+RUN echo "export TERM=xterm" >> /root/.bashrc
 COPY dedicated_cfg.txt /opt/maniaplanet-server/UserData/Config/
 COPY supervisord.conf /etc/supervisor/supervisord.conf
 COPY firstrun.sh /opt/
