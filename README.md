@@ -18,10 +18,10 @@ docker run --name myspeedball -d -p 2350:2350/udp -p 2350:2350/tcp -p 3450:3450/
 -e 'MASTER_PASSWORD=dedicated_password' -e 'ADMIN_LOGIN=shootmania_login' zagorim/speedball
 ```
 
-if you need to modify something inside the container you can enter it with 
+##Enter the container
 
     docker exec -t -i myspeedball bash
-then type "export TERM=xterm" inside the container
+    export TERM=xterm
 
 ##All configuration options   
 All the environment variables you can/need to modify
