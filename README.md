@@ -21,7 +21,6 @@ docker run --name myspeedball -d -p 2350:2350/udp -p 2350:2350/tcp -p 3450:3450/
 ##Enter the container
 
     docker exec -t -i myspeedball bash
-    export TERM=xterm
 
 ##All configuration options   
 All the environment variables ( -e ) you can/need to modify
