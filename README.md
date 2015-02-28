@@ -21,6 +21,25 @@ docker run --name myspeedball -d -p 2350:2350/udp -p 2350:2350/tcp -p 3450:3450/
 if you need to modify something inside the container you can enter it with 
 
     docker exec -t -i myspeedball bash
+then type "export TERM=xterm inside the container"
+
+##All configuration options   
+All the environment variables you can/need to modify
+
+```
+
+MASTER_LOGIN        Required
+MASTER_PASSWORD     Required
+SERVER_NAME         Required
+PLAY_PASSWORD       Optional
+SPEC_PASSWORD       Optional
+COMMENT             Optional
+MYSQL_PASS          Randomly generated if not specified by user
+RPC_PASS            Randomly generated if not specified by user
+SERVER_PORT         2350 if not specified by user
+SERVER_P2P_PORT     3450 if not specified by user
+```
+
 
 
 a more detailed guide and a noobproof script will come later to help install docker and run a server more easily
