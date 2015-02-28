@@ -7,7 +7,8 @@ fi
 touch /alreadyrun
 MYSQL_PASS=${MYSQL_PASS:-$(pwgen -s -1 16)}
 RPC_PASS=${RPC_PASS:-$(pwgen -s -1 16)}
-
+SERVER_PORT=${SERVER_PORT:-2350}
+SERVER_P2P_PORT=${SERVER_P2P_PORT:-3450}
 sed -i "s/MASTER_LOGIN/$MASTER_LOGIN/g" /opt/maniaplanet-server/UserData/Config/dedicated_cfg.txt
 sed -i "s/MASTER_PASSWORD/$MASTER_PASSWORD/g" /opt/maniaplanet-server/UserData/Config/dedicated_cfg.txt
 sed -i "s/SERVER_NAME/$SERVER_NAME/g" /opt/maniaplanet-server/UserData/Config/dedicated_cfg.txt
@@ -15,6 +16,8 @@ sed -i "s/PLAY_PASSWORD/$PLAY_PASSWORD/g" /opt/maniaplanet-server/UserData/Confi
 sed -i "s/SPEC_PASSWORD/$SPEC_PASSWORD/g" /opt/maniaplanet-server/UserData/Config/dedicated_cfg.txt
 sed -i "s/RPC_PASS/$RPC_PASS/g" /opt/maniaplanet-server/UserData/Config/dedicated_cfg.txt
 sed -i "s/COMMENT/$COMMENT/g" /opt/maniaplanet-server/UserData/Config/dedicated_cfg.txt
+sed -i "s/SERVER_PORT/$SERVER_PORT/g" /opt/maniaplanet-server/UserData/Config/dedicated_cfg.txt
+sed -i "s/SERVER_P2P_PORT/$SERVER_P2P_PORT/g" /opt/maniaplanet-server/UserData/Config/dedicated_cfg.txt
 
 cp /opt/ManiaControl/configs/server.default.xml /opt/ManiaControl/configs/server.xml
 sed -i "s/mysql_user/root/g" /opt/ManiaControl/configs/server.xml
