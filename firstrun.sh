@@ -9,6 +9,8 @@ MYSQL_PASS=${MYSQL_PASS:-$(pwgen -s -1 16)}
 RPC_PASS=${RPC_PASS:-$(pwgen -s -1 16)}
 SERVER_PORT=${SERVER_PORT:-2350}
 SERVER_P2P_PORT=${SERVER_P2P_PORT:-3450}
+
+chown -R shootmania:games  /opt/maniaplanet-server/
 sed -i "s/MASTER_LOGIN/$MASTER_LOGIN/g" /opt/maniaplanet-server/UserData/Config/dedicated_cfg.txt
 sed -i "s/MASTER_PASSWORD/$MASTER_PASSWORD/g" /opt/maniaplanet-server/UserData/Config/dedicated_cfg.txt
 sed -i "s/SERVER_NAME/$SERVER_NAME/g" /opt/maniaplanet-server/UserData/Config/dedicated_cfg.txt
