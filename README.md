@@ -40,4 +40,4 @@ SERVER_P2P_PORT     3450 if not specified by user
 
 
 
-a more detailed guide and a noobproof script will come later to help install docker and run a server more easily
+
