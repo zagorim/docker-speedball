@@ -28,6 +28,7 @@ All the environment variables ( -e ) you can/need to modify
 ```
 MASTER_LOGIN        Required
 MASTER_PASSWORD     Required
+ADMIN_LOGIN         Required
 SERVER_NAME         Required
 PLAY_PASSWORD       Optional
 SPEC_PASSWORD       Optional
