@@ -10,6 +10,7 @@ Now with maniacontrol !
 [How to install it](https://docs.docker.com/installation/debian/)
 
 Create your dedicated server logins [here](https://v4.live.maniaplanet.com/account/dedicated-servers)
+
 You just need to specify your maniaplanet dedicated server login, password, the server name and the admin login before running it like this :
 
 ```
