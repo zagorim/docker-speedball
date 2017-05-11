@@ -9,7 +9,7 @@ Now with maniacontrol !
 
 [How to install it](https://docs.docker.com/installation/debian/)
 
-
+Create your dedicated server logins [here](https://v4.live.maniaplanet.com/account/dedicated-servers)
 You just need to specify your maniaplanet dedicated server login, password, the server name and the admin login before running it like this :
 
 ```
@@ -18,11 +18,11 @@ docker run --name myspeedball -d -p 2350:2350/udp -p 2350:2350/tcp -p 3450:3450/
 -e 'MASTER_PASSWORD=dedicated_password' -e 'ADMIN_LOGIN=shootmania_login' zagorim/speedball
 ```
 
-##Enter the container
+## Enter the container
 
     docker exec -t -i myspeedball bash
 
-##All configuration options   
+## All configuration options   
 All the environment variables ( -e ) you can/need to modify
 
 ```
