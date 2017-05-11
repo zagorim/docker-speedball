@@ -14,8 +14,8 @@ Create your dedicated server logins [here](https://v4.live.maniaplanet.com/accou
 You just need to specify your maniaplanet dedicated server login, password, the server name and the admin login before running it like this :
 
 ```
-docker run --name myspeedball -d -p 2350:2350/udp -p 2350:2350/tcp -p 3450:3450/udp
--p 3450:3450/tcp -e 'SERVER_NAME=server_name' -e 'MASTER_LOGIN=dedicated_login' 
+docker run --name myspeedball -d -p 2350:2350/udp -p 2350:2350/tcp -p 3450:3450/udp -p 3450:3450/tcp \
+-e 'SERVER_NAME=server_name' -e 'MASTER_LOGIN=dedicated_login' \
 -e 'MASTER_PASSWORD=dedicated_password' -e 'ADMIN_LOGIN=shootmania_login' zagorim/speedball
 ```
 
